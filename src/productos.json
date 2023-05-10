@@ -1,0 +1,101 @@
+[
+    {
+        "id": 1,
+        "title": "camisa",
+        "descripcion": "80% algodon",
+        "code": 1,
+        "price": 20,
+        "status": true,
+        "stock": "10",
+        "category": "ropa Hombre",
+        "thumbnails": "#"
+    },
+    {
+        "id": 2,
+        "title": "pantalon",
+        "descripcion": "80% algodon",
+        "code": 2,
+        "price": 20,
+        "status": true,
+        "stock": "10",
+        "category": "ropa Hombre",
+        "thumbnails": "#"
+    },
+    {
+        "id": 3,
+        "title": "short",
+        "descripcion": "80% algodon",
+        "code": 3,
+        "price": 21,
+        "status": true,
+        "stock": "10",
+        "category": "ropa Hombre",
+        "thumbnails": "#"
+    },
+    {
+        "id": 4,
+        "title": "corbata",
+        "descripcion": "80% algodon",
+        "code": 4,
+        "price": 18,
+        "status": true,
+        "stock": "10",
+        "category": "ropa Hombre",
+        "thumbnails": "#"
+    },
+    {
+        "id": 5,
+        "title": "cinturon",
+        "descripcion": "80% cuero",
+        "code": 5,
+        "price": 11,
+        "status": true,
+        "stock": "10",
+        "category": "ropa Hombre",
+        "thumbnails": "#"
+    },
+    {
+        "id": 6,
+        "title": "sudadera",
+        "descripcion": "80% polyes",
+        "code": 6,
+        "price": 25,
+        "status": true,
+        "stock": "10",
+        "category": "ropa Hombre",
+        "thumbnails": "#"
+    },
+    {
+        "id": 7,
+        "title": "zapatillas",
+        "descripcion": "80% cuero sint",
+        "code": 7,
+        "price": 25,
+        "status": true,
+        "stock": "10",
+        "category": "ropa mujer",
+        "thumbnails": "#"
+    },
+    {
+        "id": 8,
+        "title": "falda",
+        "descripcion": "80% polyes",
+        "code": 8,
+        "price": 2,
+        "status": true,
+        "stock": "10",
+        "category": "ropa mujer",
+        "thumbnails": "#"
+    },
+    {
+        "id": 9,
+        "title": "blusa",
+        "descripcion": "80% polyes",
+        "code": 9,
+        "price": 27,
+        "status": true,
+        "stock": "10",
+        "category": "ropa mujer",
+        "thumbnails": "#"
+    }
+]

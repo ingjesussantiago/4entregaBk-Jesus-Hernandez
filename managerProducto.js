@@ -19,6 +19,22 @@ export class managerProducto {
         }
     }
 
+    getproductolimite =async (limite)=>{
+        if (fs.existsSync(this.path)) {
+            const buscarProduct = await fs.promises.readFile(this.path, "utf-8")
+            const productos = JSON.parse(buscarProduct)
+            const limiteproducto=productos.slice(0,limite)
+            console.log(limiteproducto)
+            return limiteproducto
+            
+        } else {
+            console.log("no hay archivo")
+            return []
+
+        }
+    }
+
+
     addProduct = async (producto) => {
         if (!producto.title || !producto.descripcion || !producto.code || !producto.price || !producto.status || !producto.stock || !producto.category) {
             return "error. faltan campos obligatorios"

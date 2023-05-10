@@ -1,4 +1,4 @@
-import express from "express"
+import express, { json, query } from "express"
 import { __dirname } from "./utilis.js"
 import { managerProducto } from "../managerProducto.js"
 
@@ -10,10 +10,20 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
 
-app.get("/", async (req, res) => {
+app.get("/productos", async (req, res) => {
     const productos = await ManagerProducto.getProduct()
     res.json({ productos })
 })
+
+app.get("/", async (req, res) => {
+   const {limite}=req.query
+    const productos = await ManagerProducto.getproductolimite(+limite)
+    console.log(productos)
+    res.json({ productos })
+
+})
+
+
 
 app.post("/", async (req, res) => {
     const producto = req.body
