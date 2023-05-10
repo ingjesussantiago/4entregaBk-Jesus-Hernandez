@@ -14,8 +14,8 @@ app.get("/productos", async (req, res) => {
         const productos = await ManagerProducto.getProduct()
         res.json({ productos })
     } else {
-        const { limite } = req.query
-        const productos = await ManagerProducto.getproductolimite(+limite)
+        const { limite, orden } = req.query
+        const productos = await ManagerProducto.getproductolimite(+limite,orden)
         res.json({ productos })
     }
 })
