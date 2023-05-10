@@ -9,18 +9,15 @@ const ManagerProducto = new managerProducto(__dirname + "/productos.json")
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
-
 app.get("/productos", async (req, res) => {
-    const productos = await ManagerProducto.getProduct()
-    res.json({ productos })
-})
-
-app.get("/", async (req, res) => {
-   const {limite}=req.query
-    const productos = await ManagerProducto.getproductolimite(+limite)
-    console.log(productos)
-    res.json({ productos })
-
+    if (req.url === "/productos" && req.method === "GET") {
+        const productos = await ManagerProducto.getProduct()
+        res.json({ productos })
+    } else {
+        const { limite } = req.query
+        const productos = await ManagerProducto.getproductolimite(+limite)
+        res.json({ productos })
+    }
 })
 
 
